@@ -6,7 +6,7 @@ public class APIs {
     public static String Manual_FundTransAPi        =      "http://api2.atscart.com/api/manually_jolo_transfer";
     public static String LoginAPI                   =      "http://api2.atscart.com/api/login";
     public static String Mystock                    =      "http://api2.atscart.com/api/show_customer_stock";
-    public static String RegisterAPI                =      "http://api2.atscart.com/api/  ";
+    public static String RegisterAPI                =      "http://api2.atscart.com/api/signup";
     public static String ProductlistAPI             =      "http://api2.atscart.com/api/product_by_type";
     public static String lottery_details            =      "http://api2.atscart.com/api/show_lottery";
     public static String balance_detail             =      "http://api2.atscart.com/api/show_balane";

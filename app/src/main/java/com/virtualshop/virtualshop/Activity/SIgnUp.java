@@ -437,7 +437,7 @@ public class SIgnUp extends AppCompatActivity {
 
                 String body = null;
                 //get status code here
-                String statusCode = String.valueOf(error.networkResponse.statusCode);
+//                String statusCode = String.valueOf(error.networkResponse.statusCode);
                 //get response body and parse with appropriate encoding
                 if(error.networkResponse.data!=null) {
                     try {
