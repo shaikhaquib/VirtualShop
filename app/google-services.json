@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1045516036820",
+    "firebase_url": "https://virtualshop-5ba90.firebaseio.com",
+    "project_id": "virtualshop-5ba90",
+    "storage_bucket": "virtualshop-5ba90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045516036820:android:ce561c471d41f949",
+        "android_client_info": {
+          "package_name": "com.virtualshop.virtualshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045516036820-m9gss2e8o2bemrf8ud37sm541frmtg9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.virtualshop.virtualshop",
+            "certificate_hash": "14fc96c6a2d742ea6c2accfac39c0823c405ce83"
+          }
+        },
+        {
+          "client_id": "1045516036820-bkqrl6mf7722pvrajtpdggukkr68olvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnHrY4pfd5RUCJwvDRd_7Z6-wQ16eEpDI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045516036820-bkqrl6mf7722pvrajtpdggukkr68olvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

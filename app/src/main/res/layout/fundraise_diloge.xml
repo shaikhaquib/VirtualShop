@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure do you want to continue with"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:gravity="center"
+        android:id="@+id/dgText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Winning Record of this no"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_first"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/dgfirst"
+        android:text="Winning Record of this no"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dgsecond"
+        android:drawableLeft="@drawable/ic_second"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Winning Record of this no"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dgthird"
+        android:drawableLeft="@drawable/ic_third"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Winning Record of this no"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:id="@+id/dgConfirm"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+</LinearLayout>
+
+</RelativeLayout>

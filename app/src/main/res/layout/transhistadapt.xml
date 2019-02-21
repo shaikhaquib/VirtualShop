@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="2dp"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction id : WT3042289688DWS25967"
+            android:textColor="#545454"
+            android:fontFamily="serif"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:visibility="gone"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_hist"
+                android:paddingLeft="10dp"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_border"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3d3b3b"
+                    android:id="@+id/trdetail"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:text="wallet ballance"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trId"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="16:21 PM, 11 Apr 2018" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trdate"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="16:21 PM, 11 Apr 2018" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tramount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:text="₹2000"
+                    android:textColor="#161616"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/trstat"
+                    android:fontFamily="@font/sourcesanspro_regular"
+                    android:text="PURCHASED"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

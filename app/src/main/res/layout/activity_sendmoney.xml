@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Send_Money">
+
+ <android.support.v7.widget.CardView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="8dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/activity_vertical_margin"
+      android:orientation="vertical">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_margin="@dimen/activity_vertical_margin"
+       android:fontFamily="@font/sourcesanspro_regular"
+       android:text="Pay From Virtual Shop"
+       android:textSize="@dimen/activity_vertical_margin"/>
+
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/sourcesanspro_regular"
+       android:background="@drawable/border"
+       android:hint="Enter Customer Id of your friend"
+       android:layout_marginRight="@dimen/activity_vertical_margin"
+       android:layout_marginLeft="@dimen/activity_vertical_margin"
+       android:padding="8dp"
+       android:inputType="number"
+       android:textSize="@dimen/activity_vertical_margin"
+       android:id="@+id/payid"
+       />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/sourcesanspro_regular"
+       android:layout_marginTop="@dimen/activity_vertical_margin"
+       android:background="@drawable/border"
+       android:hint="Amount"
+       android:textSize="@dimen/activity_vertical_margin"
+       android:inputType="number"
+       android:id="@+id/payamt"
+       android:layout_marginRight="@dimen/activity_vertical_margin"
+       android:layout_marginLeft="@dimen/activity_vertical_margin"
+       android:padding="8dp"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimary"
+       android:id="@+id/btnpay"
+       android:textColor="@color/white"
+       android:layout_marginTop="@dimen/activity_vertical_margin"
+       android:layout_marginRight="@dimen/activity_vertical_margin"
+       android:layout_marginLeft="@dimen/activity_vertical_margin"
+       android:text="Transfer"/>
+
+  </LinearLayout>
+
+ </android.support.v7.widget.CardView>
+
+</LinearLayout>

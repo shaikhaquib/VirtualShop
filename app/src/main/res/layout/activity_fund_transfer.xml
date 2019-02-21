@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backround"
+    tools:context=".Activity.FundTransfer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/balanecustomer"
+                    android:layout_centerHorizontal="true"
+                    app:cpb_background_progressbar_color="#f2f2f2"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress="40"
+                    android:layout_gravity="center"
+                    android:scrollIndicators="left"
+                    app:cpb_progressbar_color="@android:color/holo_blue_light"
+                    app:cpb_progressbar_width="5dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="7"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  -"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textStyle="bold"
+                        android:id="@+id/withBalance"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Available Balance"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:id="@+id/icaddmoneytr"
+                    android:src="@drawable/ic_add_circle"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Remainlayout"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="₹ 100000"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdrawal\nBalance"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cpb_progress="20"
+                app:cpb_background_progressbar_width="15dp"
+                app:cpb_progressbar_width="15dp"
+                app:cpb_progressbar_color="@android:color/holo_blue_dark"
+                app:cpb_background_progressbar_color="#f2f2f2"
+                />
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Remainlayout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/remainProgress"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        app:cpb_background_progressbar_color="#f2f2f2"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="40"
+                        android:scrollIndicators="left"
+                        app:cpb_progressbar_color="@android:color/holo_blue_light"
+                        app:cpb_progressbar_width="10dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/remainlimit"
+                        android:gravity="center_vertical"
+                        android:text="₹ 1000000"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Remaining\nLimit" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/consumprogrss"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        app:cpb_background_progressbar_color="#f2f2f2"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress="40"
+                        app:cpb_progressbar_color="@android:color/holo_blue_light"
+                        app:cpb_progressbar_width="10dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:paddingTop="20dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_noun_504631_cc"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/consumlimit"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:text="₹ 1000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Consumed\nLimit" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_margin="@dimen/activity_vertical_margin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fundlayout"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:id="@+id/funAccount"
+                        android:hint="Account No"
+                        android:backgroundTint="#f2f2f2"
+                        android:gravity="center_vertical"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:padding="12dp"
+                        android:focusable="false"
+                        android:focusedByDefault="false"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:drawableRight="@drawable/ic_account_balance_black_24dp"
+                        android:background="@drawable/border"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ifsc code"
+                        android:id="@+id/funIfsc"
+                        android:gravity="center_vertical"
+                        android:focusable="false"
+                        android:focusedByDefault="false"
+                        android:backgroundTint="#f2f2f2"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:padding="12dp"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:drawableRight="@drawable/ic_account_balance_black_24dp"
+                        android:background="@drawable/border"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Amount"
+                        android:id="@+id/fundamount"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:padding="12dp"
+                        android:maxLength="6"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:inputType="number"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:drawableRight="@drawable/ic_account_balance_black_24dp"
+                        android:background="@drawable/border"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:text="Surcharge"
+                            android:gravity="center_vertical|center"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/fundsurcharge"
+                            android:hint="Surcharge"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:focusedByDefault="false"
+                            android:padding="12dp"
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:textSize="@dimen/activity_vertical_margin"
+                            tools:targetApi="lollipop" />
+                   </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:text="TDS"
+                            android:gravity="center_vertical|center"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/tds"
+                            android:hint="TDS"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:focusedByDefault="false"
+                            android:padding="12dp"
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:textSize="@dimen/activity_vertical_margin"
+                            tools:targetApi="lollipop" />
+                      </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:text="ADMIN CHARGE"
+                            android:gravity="center_vertical|center"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/admincharge"
+                            android:hint="Admin Charge"
+                            android:focusable="false"
+                            android:focusedByDefault="false"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:textSize="@dimen/activity_vertical_margin"
+
+                            tools:targetApi="lollipop" />
+                      </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:layout_margin="8dp"
+                        android:background="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:text="NET PAYOUT"
+                            android:gravity="center_vertical|center"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/fundToatal"
+                            android:fontFamily="@font/sourcesanspro_regular"
+                            android:textSize="@dimen/activity_vertical_margin"
+                            android:hint="Net payout"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:focusedByDefault="false"
+                            android:padding="12dp"
+                           />
+
+                      </LinearLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/btnTrans"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Transfer"
+                        android:layout_margin="8dp"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:id="@+id/txtError"
+            android:visibility="gone"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:text="Sorry for inconvenience ! Fund transfer currently unavailable. Please try after some time"/>
+    </LinearLayout>
+</ScrollView>

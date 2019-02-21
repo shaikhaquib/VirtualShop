@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backround"
+    tools:context=".Activity.AddBeneficiary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="SUBMIT BENEFICIARY DETAILS"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="8dp"
+                        android:visibility="gone"
+                        android:textSize="@dimen/activity_vertical_margin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="Enter your bank details"
+                        android:textSize="@dimen/activity_vertical_margin"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Name"
+                        android:id="@+id/bnfName"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border"
+                        android:padding="8dp"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Mobile No"
+                        android:maxLength="10"
+                        android:id="@+id/bnfMobile"
+                        android:inputType="number"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/border"
+                        android:padding="8dp"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Account No"
+                        android:id="@+id/bnfAccountno"
+                        android:inputType="number"
+                        android:maxLength="18"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/border"
+                        android:padding="8dp"
+                        android:fontFamily="@font/sourcesanspro_regular"
+
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/border"
+                        android:padding="8dp"
+                        android:hint="Enter Ifsc Code"
+                        android:id="@+id/bnfifsc"
+                        android:maxLength="11"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:background="@color/colorPrimary"
+                        android:text="Add Beneficiary"
+                        android:id="@+id/Addbnf"
+                        android:fontFamily="@font/sourcesanspro_regular"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

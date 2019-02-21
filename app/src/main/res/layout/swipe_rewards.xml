@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardElevation="4dp"
+    android:layout_margin="@dimen/fragment_title_padding_10"
+    android:background="@drawable/border"
+    android:padding="2dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:id="@+id/image_rewards"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/r1"
+        android:scaleType="fitXY"
+        android:background="@drawable/border"
+        />
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/pgreward"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</android.support.v7.widget.CardView>

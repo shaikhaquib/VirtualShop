@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.virtualshop.virtualshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.gnsbook.digital.provider.READ_DATABASE" />
+    <uses-permission android:name="android.permissions.READ_DATABASE"/>
+
+    <application
+        android:name=".Config.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.LoginActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Forgotpass"
+            android:parentActivityName=".Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity.SIgnUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity.Send_Money"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity.VirtualShop"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Activity.FundRaise"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <receiver
+            android:name=".InstallReferrerReceiver"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.OldLottery"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.Main2Activity" />
+        <activity
+            android:name=".Activity.LotteryWinnerlist"
+            android:parentActivityName=".Activity.LotteryWinnerlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReferralList"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoadMoney"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="http://api2.atscart.com/access_token.php" />
+
+        <activity
+            android:name=".Activity.Agent_Signup"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BenificiaryList"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AddBeneficiary"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FundTransfer"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Manual_payment.Manual_FundTransfer"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Manual_payment.Manual_BenificiaryList"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_ecommerce" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".Activity.Notification"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.JivoActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.MyShop"
+            android:parentActivityName=".Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.Recent_Transaction" />
+        <activity
+            android:name=".Activity.ShopProduct"
+            android:label="@string/title_activity_shop_product"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.Mystock"
+            android:label="MyStock"
+            android:parentActivityName=".Activity.MainActivity"/>
+    </application>
+
+</manifest>

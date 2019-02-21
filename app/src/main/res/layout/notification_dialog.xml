@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="@dimen/activity_vertical_margin"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/rewardimg"
+                    android:src="@drawable/ic_winner"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:tint="@color/text_color"
+                android:id="@+id/closewinpop"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#838383"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:id="@+id/rewardDesc"
+            android:text="Mr.XYZ is rewarded with brand new Swift Dzire for the excellent performance in the month of June 2018.  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            android:textSize="18sp"
+            android:id="@+id/winamt"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

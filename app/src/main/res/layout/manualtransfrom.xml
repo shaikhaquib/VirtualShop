@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close"
+            android:layout_gravity="end"
+            android:tint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:inputType="number"
+            android:hint="Amount"
+            android:id="@+id/mnAMT"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/mnMode"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="Mode"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/mnTrid"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="Transaction ID"
+            android:background="@drawable/border"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            >
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_time"
+                android:layout_weight="7"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:focusable="false"
+                android:focusedByDefault="false"
+                android:hint="Transaction Date"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="3"
+                android:text="PICK DATE"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/btn_time"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_gradient"
+                android:layout_below="@+id/btn_date"
+                android:layout_alignLeft="@+id/btn_date"
+                android:layout_alignStart="@+id/btn_date" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/submit"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@drawable/border"
+            android:layout_alignParentBottom="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Zelenor Solutions Private Limited"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_bank"
+            android:drawablePadding="@dimen/margin_16"
+            android:textSize="@dimen/activity_vertical_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="918020092255236"
+            android:textIsSelectable="true"
+            android:selectAllOnFocus="true"
+            android:drawableLeft="@drawable/ic_credit_card"
+            android:drawablePadding="@dimen/margin_16"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_axisbank"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="AXIS BANK"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="UTIB0001963"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/activity_vertical_margin"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="THANE"
+            android:textIsSelectable="true"
+            android:selectAllOnFocus="true"
+            android:drawablePadding="@dimen/margin_16"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:drawableLeft="@drawable/ic_address"
+            android:gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

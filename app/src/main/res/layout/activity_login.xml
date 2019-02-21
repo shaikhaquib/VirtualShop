@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiantblue"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/linearLayout">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_emailsmall"
+                    android:drawableTint="@color/primary_color"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleDrawable="@drawable/showpass"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false"
+                    app:passwordToggleTint="@color/colorPrimary"
+                    >
+
+                    <EditText
+                        android:id="@+id/lgPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:background="@drawable/border"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <!-- Login Button -->
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_gradient"
+                    android:text="@string/login"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    >
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  OR  "
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF5722"
+                    android:paddingLeft="50dp"
+                    android:background="@drawable/btn_gradient"
+                    android:drawableLeft="@drawable/gnsbooklogo"
+                    android:drawableTint="@color/white"
+                    android:text="Login with GNSBOOK              "
+                    android:onClick="Login"
+                    android:textColor="@android:color/white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:textColor="@color/white"
+                    android:onClick="forgotPass"
+                    android:text="Forgot Password ? Reset password ."/>
+
+                <!-- Link to Login Screen -->
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="register"
+            android:text="BECOME A MEMBER"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

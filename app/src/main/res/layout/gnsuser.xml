@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/gnsbooklogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textSize="@dimen/margin_16"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/textcolorr"
+            android:text="Virtual Shop will receive : \n your public profile and email address"/>
+
+
+        <Button
+            android:id="@+id/btnGnsUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:text="Continue as Avinash Anshu"
+            android:background="@drawable/btn_gradient"/>
+
+
+        <TextView
+            android:id="@+id/gnsuseranother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:text="Use another account"
+            android:fontFamily="@font/roboto_bold"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

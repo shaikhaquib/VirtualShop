@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="@dimen/activity_vertical_margin"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/rewardimg"
+                    android:src="@drawable/ic_happy_businessman"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:tint="@color/white"
+                    android:id="@+id/closeadrefpop"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/sourcesanspro_regular"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="It seem you have not added referral \n Hurry You can earn up to ₹50 rewards by adding your referral id "/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:hint="REFERRAL ID"
+                android:id="@+id/dgReferralid"
+               />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:id="@+id/dgSubmit"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</android.support.v7.widget.CardView>
