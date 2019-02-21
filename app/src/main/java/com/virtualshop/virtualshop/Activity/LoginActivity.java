@@ -267,9 +267,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void Login(View view) {
+        GNS_AUTH();
 
 
-        boolean isAppInstalled = appInstalledOrNot("com.httpgnsbook.gnsbook");
+       /* boolean isAppInstalled = appInstalledOrNot("com.httpgnsbook.gnsbook");
 
         if(isAppInstalled) {
 
@@ -281,9 +282,8 @@ public class LoginActivity extends AppCompatActivity {
             // Do whatever we want to do if application not installed
             // For example, Redirect to play store
 
-            GNS_AUTH();
             Log.d("not installed.","False");
-        }
+        }*/
     }
 
 
