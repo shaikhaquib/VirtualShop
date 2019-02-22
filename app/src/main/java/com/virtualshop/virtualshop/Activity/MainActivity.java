@@ -33,6 +33,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -253,6 +254,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 try {
 
+                    Log.d("Responce",response);
                     JSONObject jsonObject = new JSONObject(response);
                     if (jsonObject.getBoolean("status")) {
                         db.deleteUsers();
@@ -291,7 +293,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> param = new HashMap<String, String>();
-                param.put("customer_id", Global.customerid);
+                param.put("customer_id", "1550821306");
                 param.put("referral_id",referral);
                 return param;
             }
